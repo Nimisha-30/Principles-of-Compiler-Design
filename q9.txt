@@ -1,0 +1,16 @@
+%{
+#include<stdio.h>
+%}
+%%
+b*(a+b?)* {printf("accepted");}
+%%
+int yywrap()
+{
+return 0;
+}
+int main()
+{
+printf("Enter input: ");
+yylex();
+return 0;
+}
