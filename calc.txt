@@ -1,0 +1,10 @@
+to get output, run the following commands:
+1) yacc -d calc.yacc
+2) lex calc.lex
+3) cc y.tab.c lex.yy.c
+4) ./a.out
+OR
+1) lex calc.lex
+2) yacc calc.yacc
+3) gcc lex.yy.c y.tab.c -w
+4) ./a.out
